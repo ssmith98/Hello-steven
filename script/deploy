@@ -1,6 +1,6 @@
 #!/bin/sh
  
-ssh -i /root/.ssh/id_rsa.pub root@ansibletest <<EOF
+ssh -t -t -i /root/.ssh/id_rsa.pub root@ansibletest <<EOF
   cd /srv/Hello-steven
   git pull
   npm install --production
